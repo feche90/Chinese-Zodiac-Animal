@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+</head>
+<body>
+    {% block content %}
+       
+       <p>
+        <h1>Hello {{name}}, your zodiac animal according to the Shendu is:  <span class="badge badge-secondary">{{byear}}</span></h1>
+        </p>
+        <img src="{% static 'main/images/' %}{{source}}" width="200" height="141" alt="">
+        
+    {% endblock %}
+</body>
+</html>
